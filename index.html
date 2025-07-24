@@ -3,13 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive-Flowers</title>
+    <title>Responsive Flower Shop</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <nav>
-        <img src="./assets/logo.png" alt="" />
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      </div>
+      <nav class="navbar-center">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About us</a>
       </nav>
-    </main>
+      <div class="navbar-right">
+        <img src="assets/images/cart.svg" alt="Cart Icon" class="cart-icon" />
+        <span>Cart ($56)</span>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner-text">
+        <h1>ALWAYS <span class="highlight">FRESH</span> FLOWERS</h1>
+        <p>
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+      <div class="banner-image">
+        <img src="assets/images/banner.png" alt="Flower Banner" />
+      </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="plants">
+      <h2><span class="highlight">Our</span> Plants</h2>
+      <p>
+        Indulge your senses with the beauty and fragrance of our fresh flower
+        shop. From classic roses to exotic blooms, we offer a wide variety of
+        fresh.
+      </p>
+
+      <div class="plant-grid">
+        <!-- Plant card example -->
+        <div class="plant-card">
+          <img src="assets/images/flower1.jpg" alt="Plant 1" />
+          <h3>Rose</h3>
+          <p>$10</p>
+          <button>Add to Cart</button>
+        </div>
+        <!-- Add 7 more plant cards -->
+      </div>
+    </section>
   </body>
 </html>

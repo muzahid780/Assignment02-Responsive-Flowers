@@ -1,0 +1,163 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fbff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navbar-center a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #111;
+}
+
+.cart-icon {
+  width: 24px;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #f97316;
+}
+
+.banner-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Plants Section */
+.plants {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.plants h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.plants p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.plant-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.plant-card p {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.plant-card button {
+  padding: 8px 16px;
+  background-color: #f97316;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background-color: #ea580c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    text-align: left;
+  }
+
+  .plants {
+    padding: 40px 20px;
+  }
+}
