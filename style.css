@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f9fbff;
+  background-color: #f7f8fa;
   color: #333;
 }
 
@@ -19,10 +19,6 @@ body {
   padding: 20px 40px;
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-}
-
-.logo {
-  height: 40px;
 }
 
 .navbar-center a {
@@ -41,14 +37,6 @@ body {
   color: #000000;
 }
 
-.cart-icon {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  left: 19px;
-  top: 20px;
-}
-
 /* Banner Section */
 .banner {
   display: flex;
@@ -56,7 +44,7 @@ body {
   justify-content: space-between;
   padding: 60px 40px;
   flex-wrap: wrap;
-  gap: 15px:
+  gap: 15px;
 }
 
 .banner-text {
@@ -77,14 +65,18 @@ body {
 .banner-text p {
   font-size: 16px;
   line-height: 1.6;
-  color: #5555;
+  color: #555;
+}
+.banner-image {
+  display: flex;
 }
 
 .banner-image img {
   max-width: 100%;
   height: auto;
-  
-  
+  display: flex;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
 }
 
 /* Plants Section */
@@ -100,7 +92,7 @@ body {
 
 .plants p {
   font-size: 16px;
-  color: #5555;
+  color: #555;
   margin-bottom: 40px;
 }
 
@@ -111,9 +103,10 @@ body {
 }
 
 .plant-card {
-  /*background-color: #fff;*/
-  /*border: 1px solid #eee;*/
-  gap: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   padding: 16px;
   text-align: center;
 }
@@ -122,8 +115,6 @@ body {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  
-  
 }
 
 .plant-card h3 {
@@ -138,58 +129,24 @@ body {
 }
 
 .plant-card button {
-  padding: 20px 65px;
+  padding: 12px 30px;
   background-color: #f97316;
   border: none;
   color: white;
-  
+
+  font-size: 14px;
+  /*transition: background 0.3s ease;*/
 }
 
 .plant-card button:hover {
   background-color: #ea580c;
 }
 
-/* Responsive Styles */
-@media (max-width: 992px){
-.navbar-center {
-  flex-direction: column;
-}
-}
-  
-
-
-@media (max-width: 768px) {
-  .navbar-center {
-    display: none;
-  }
-
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .banner-text {
-    text-align: left;
-  }
-
-  .plants {
-    padding: 40px 20px;
-  }
-}
-
-
-/*flower and plants lover section*/
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f8fa;
-  margin: 40px;
-}
-
+/* Flower & Plants Lover Section */
 .container {
-  display: flex;
   gap: 50px;
   align-items: flex-start;
+  padding: 60px 40px;
 }
 
 .image-section {
@@ -199,72 +156,285 @@ body {
 }
 
 .image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f8fa;
-  margin: 40px;
-}
-
-.container {
   display: flex;
-  gap: 50px;
-  align-items: flex-start;
-}
-
-.image-section {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.image-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .trusted-badge {
-  /*position: absolute;
-  top: -30px;
-  left: 250px;
-  width: 100px;*/
-
-  Outside shadow
-X:-4 Y:10 Blur: 4 extension: 0 #000000
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100px;
 }
 
 .text-section {
   max-width: 500px;
   position: relative;
-  
 }
 
 .text-section h1 {
+  display: flex;
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000000; 
-  
+  color: #000000;
 }
 
 .text-section ul {
   list-style: disc;
   padding-left: 20px;
-  color: #5555;
-  
+  color: #555;
 }
 
-
-  
+/* Latest Deals Section */
+.Latest-Deals {
+  padding: 40px 50px;
+  text-align: center;
 }
 
+.Lovers {
+  font-size: 16px;
+  text-align: center;
+}
 
+/* Deals Cards */
+.plant-offers-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px 60px;
+}
 
+.left-column {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+}
 
- 
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.offer-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
 
+.offer-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
 
+.shop-btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.right-banner {
+  display: flex;
+
+  position: relative;
+  flex: 2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.right-banner img {
+  display: flex;
+
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.right-banner .offer-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  height: 300px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+  color: white;
+}
+
+.subscribe-section h1 {
+  /*cheaking*/
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #f4511e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease; /*cheaking*/
+}
+
+.subscribe-form button:hover {
+  background-color: #d63f15;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f8fa;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 250px;
+}
+
+.footer-left .description {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-column a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.link-column a:hover {
+  color: #f4511e;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-center {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+  }
+}
+.banner {
+  flex-direction: column;
+  text-align: center;
+}
+
+.plants {
+  padding: 40px 20px;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-offers-container {
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  /*flex-direction: column;
+    align-items: center;
+    text-align: center;*/
+  gap: 30px;
+}
+
+.footer-links {
+  flex-direction: column;
+}
+.link-column {
+  display: flex;
+
+  text-align: center;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+}
